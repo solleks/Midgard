@@ -82,6 +82,8 @@
 {
     RootViewController *rootViewController = (RootViewController *)[self.navigationController topViewController];
     rootViewController.managedObjectContext = self.managedObjectContext;
+    
+    [self printDatabase];
 }
 
 - (void)saveContext
@@ -195,6 +197,73 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+#pragma mark - Core data debugging support
+
+- (void)printDatabase {
+    // Print all of the entity values in the managed object context.
+    NSLog(@"Printing out the entire database");
+    
+    [self printUnorderedEntities:@"Program"];
+    [self printRules];
+    [self printUnorderedEntities:@"TermList"];
+    [self printUnorderedEntities:@"TermOccurrence"];
+    [self printUnorderedEntities:@"Structure"];
+    [self printUnorderedEntities:@"Variable"];
+    [self printUnorderedEntities:@"Atom"];
+}
+
+- (void) printUnorderedEntities:(NSString *)entityName {
+    // Create the fetch request.
+    NSFetchRequest *fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    // Set the batch size to a suitable number.
+    [fetchRequest setFetchBatchSize:20];
+    
+    NSError *error = nil;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (array == nil) {
+        NSLog(@"Error fetching %@: %@", entityName, error);
+    }
+    
+    // Continue from here...
+    NSLog(@"Found %@s", entityName);
+    for (NSManagedObject *obj in array) {
+        NSLog(@"%@", obj);
+    }
+}
+
+- (void) printRules {
+    // Create the fetch request for Rules.
+    NSFetchRequest *fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Rule" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    // Set the batch size to a suitable number.
+    [fetchRequest setFetchBatchSize:20];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES] autorelease];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    NSError *error = nil;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (array == nil) {
+        NSLog(@"Error fetching rules: %@", error);
+    }
+    
+    // Continue from here...
+    NSLog(@"Found Rules");
+    for (NSManagedObject *obj in array) {
+        NSLog(@"%@", obj);
+    }
 }
 
 @end

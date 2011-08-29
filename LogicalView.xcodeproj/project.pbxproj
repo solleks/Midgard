@@ -25,6 +25,24 @@
 		6833530313D80CF3000377D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6833530113D80CF3000377D0 /* InfoPlist.strings */; };
 		6833530613D80CF3000377D0 /* LogicalViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 6833530513D80CF3000377D0 /* LogicalViewTests.h */; };
 		6833530813D80CF3000377D0 /* LogicalViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6833530713D80CF3000377D0 /* LogicalViewTests.m */; };
+		6833531413D80D68000377D0 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6833531213D80D68000377D0 /* MainWindow-iPad.xib */; };
+		683753AC13F4EE5A00378DB3 /* ScalarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 683753AB13F4EE5900378DB3 /* ScalarViewController.m */; };
+		68B2A53C13F21C8D00F3A18F /* NewTermViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2A53B13F21C8D00F3A18F /* NewTermViewController.m */; };
+		68B6782C13FF779600A0AB28 /* SelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B6782A13FF779600A0AB28 /* SelectionViewController.m */; };
+		68B6782D13FF779600A0AB28 /* SelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B6782B13FF779600A0AB28 /* SelectionViewController.xib */; };
+		68BAF9A413E7B0B7007C225B /* RuleViewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BAF9A213E7B0B6007C225B /* RuleViewDetailController.m */; };
+		68BAF9A513E7B0B7007C225B /* RuleViewDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68BAF9A313E7B0B6007C225B /* RuleViewDetailController.xib */; };
+		68E1486313F0ED7800D25ACF /* TermViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E1486213F0ED7800D25ACF /* TermViewController.m */; };
+		68E2668813EF971500A1DE2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E2668713EF971500A1DE2F /* QuartzCore.framework */; };
+		68E2668E13EF9A2900A1DE2F /* StructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E2668D13EF9A2900A1DE2F /* StructureViewController.m */; };
+		68FE2C3D13DB3E9800214777 /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C3C13DB3E9800214777 /* Atom.m */; };
+		68FE2C4013DB3ED300214777 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C3F13DB3ED300214777 /* Program.m */; };
+		68FE2C4313DB3EF300214777 /* Variable.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C4213DB3EF300214777 /* Variable.m */; };
+		68FE2C4613DB3F0800214777 /* TermOccurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C4513DB3F0800214777 /* TermOccurrence.m */; };
+		68FE2C4913DB3F1700214777 /* TermList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C4813DB3F1700214777 /* TermList.m */; };
+		68FE2C4C13DB3F3100214777 /* Term.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C4B13DB3F3100214777 /* Term.m */; };
+		68FE2C4F13DB3F3100214777 /* Structure.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C4E13DB3F3100214777 /* Structure.m */; };
+		68FE2C5213DB3F3200214777 /* Rule.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2C5113DB3F3200214777 /* Rule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,23 +61,57 @@
 		683352D413D80CF3000377D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		683352D613D80CF3000377D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		683352D813D80CF3000377D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		683352DC13D80CF3000377D0 /* LogicalView-Info.plist */ = {isa = PBXFileReference; path = "LogicalView-Info.plist"; sourceTree = "<group>"; };
+		683352DC13D80CF3000377D0 /* LogicalView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicalView-Info.plist"; sourceTree = "<group>"; };
 		683352DE13D80CF3000377D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		683352E013D80CF3000377D0 /* LogicalView-Prefix.pch */ = {isa = PBXFileReference; path = "LogicalView-Prefix.pch"; sourceTree = "<group>"; };
+		683352E013D80CF3000377D0 /* LogicalView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicalView-Prefix.pch"; sourceTree = "<group>"; };
 		683352E113D80CF3000377D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		683352E313D80CF3000377D0 /* LogicalViewAppDelegate.h */ = {isa = PBXFileReference; path = LogicalViewAppDelegate.h; sourceTree = "<group>"; };
+		683352E313D80CF3000377D0 /* LogicalViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicalViewAppDelegate.h; sourceTree = "<group>"; };
 		683352E413D80CF3000377D0 /* LogicalViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicalViewAppDelegate.m; sourceTree = "<group>"; };
 		683352E713D80CF3000377D0 /* LogicalView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogicalView.xcdatamodel; sourceTree = "<group>"; };
 		683352EA13D80CF3000377D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		683352EC13D80CF3000377D0 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		683352EC13D80CF3000377D0 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		683352ED13D80CF3000377D0 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		683352F013D80CF3000377D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		683352F713D80CF3000377D0 /* LogicalViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicalViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6833530013D80CF3000377D0 /* LogicalViewTests-Info.plist */ = {isa = PBXFileReference; path = "LogicalViewTests-Info.plist"; sourceTree = "<group>"; };
+		6833530013D80CF3000377D0 /* LogicalViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicalViewTests-Info.plist"; sourceTree = "<group>"; };
 		6833530213D80CF3000377D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6833530413D80CF3000377D0 /* LogicalViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "LogicalViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		6833530413D80CF3000377D0 /* LogicalViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicalViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		6833530513D80CF3000377D0 /* LogicalViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicalViewTests.h; sourceTree = "<group>"; };
 		6833530713D80CF3000377D0 /* LogicalViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicalViewTests.m; sourceTree = "<group>"; };
+		6833531313D80D68000377D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		683753AA13F4EE5900378DB3 /* ScalarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalarViewController.h; sourceTree = "<group>"; };
+		683753AB13F4EE5900378DB3 /* ScalarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalarViewController.m; sourceTree = "<group>"; };
+		68B2A53A13F21C8D00F3A18F /* NewTermViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTermViewController.h; sourceTree = "<group>"; };
+		68B2A53B13F21C8D00F3A18F /* NewTermViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTermViewController.m; sourceTree = "<group>"; };
+		68B6782913FF779600A0AB28 /* SelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionViewController.h; path = LogicalView.xcodeproj/SelectionViewController.h; sourceTree = SOURCE_ROOT; };
+		68B6782A13FF779600A0AB28 /* SelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionViewController.m; path = LogicalView.xcodeproj/SelectionViewController.m; sourceTree = SOURCE_ROOT; };
+		68B6782B13FF779600A0AB28 /* SelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectionViewController.xib; path = LogicalView.xcodeproj/SelectionViewController.xib; sourceTree = SOURCE_ROOT; };
+		68BAF9A113E7B0B6007C225B /* RuleViewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleViewDetailController.h; sourceTree = "<group>"; };
+		68BAF9A213E7B0B6007C225B /* RuleViewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleViewDetailController.m; sourceTree = "<group>"; };
+		68BAF9A313E7B0B6007C225B /* RuleViewDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleViewDetailController.xib; sourceTree = "<group>"; };
+		68E1486113F0ED7800D25ACF /* TermViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermViewController.h; sourceTree = "<group>"; };
+		68E1486213F0ED7800D25ACF /* TermViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermViewController.m; sourceTree = "<group>"; };
+		68E2668713EF971500A1DE2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		68E2668C13EF9A2900A1DE2F /* StructureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructureViewController.h; sourceTree = "<group>"; };
+		68E2668D13EF9A2900A1DE2F /* StructureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructureViewController.m; sourceTree = "<group>"; };
+		68E2668F13EFA02500A1DE2F /* ViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstants.h; sourceTree = "<group>"; };
+		68FE2C3B13DB3E9800214777 /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
+		68FE2C3C13DB3E9800214777 /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
+		68FE2C3E13DB3ED300214777 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		68FE2C3F13DB3ED300214777 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		68FE2C4113DB3EF300214777 /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
+		68FE2C4213DB3EF300214777 /* Variable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variable.m; sourceTree = "<group>"; };
+		68FE2C4413DB3F0800214777 /* TermOccurrence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermOccurrence.h; sourceTree = "<group>"; };
+		68FE2C4513DB3F0800214777 /* TermOccurrence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermOccurrence.m; sourceTree = "<group>"; };
+		68FE2C4713DB3F1700214777 /* TermList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermList.h; sourceTree = "<group>"; };
+		68FE2C4813DB3F1700214777 /* TermList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermList.m; sourceTree = "<group>"; };
+		68FE2C4A13DB3F3000214777 /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
+		68FE2C4B13DB3F3100214777 /* Term.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Term.m; sourceTree = "<group>"; };
+		68FE2C4D13DB3F3100214777 /* Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structure.h; sourceTree = "<group>"; };
+		68FE2C4E13DB3F3100214777 /* Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Structure.m; sourceTree = "<group>"; };
+		68FE2C5013DB3F3100214777 /* Rule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rule.h; sourceTree = "<group>"; };
+		68FE2C5113DB3F3200214777 /* Rule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rule.m; sourceTree = "<group>"; };
+		68FE2C5413DB444500214777 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E2668813EF971500A1DE2F /* QuartzCore.framework in Frameworks */,
 				683352D313D80CF3000377D0 /* UIKit.framework in Frameworks */,
 				683352D513D80CF3000377D0 /* Foundation.framework in Frameworks */,
 				683352D713D80CF3000377D0 /* CoreGraphics.framework in Frameworks */,
@@ -110,6 +163,7 @@
 		683352D113D80CF3000377D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68E2668713EF971500A1DE2F /* QuartzCore.framework */,
 				683352D213D80CF3000377D0 /* UIKit.framework */,
 				683352D413D80CF3000377D0 /* Foundation.framework */,
 				683352D613D80CF3000377D0 /* CoreGraphics.framework */,
@@ -121,13 +175,22 @@
 		683352DA13D80CF3000377D0 /* LogicalView */ = {
 			isa = PBXGroup;
 			children = (
+				6833531113D80D67000377D0 /* iPad */,
 				683352E313D80CF3000377D0 /* LogicalViewAppDelegate.h */,
 				683352E413D80CF3000377D0 /* LogicalViewAppDelegate.m */,
 				683352E913D80CF3000377D0 /* MainWindow.xib */,
 				683352EC13D80CF3000377D0 /* RootViewController.h */,
 				683352ED13D80CF3000377D0 /* RootViewController.m */,
 				683352EF13D80CF3000377D0 /* RootViewController.xib */,
+				68BAF9A113E7B0B6007C225B /* RuleViewDetailController.h */,
+				68BAF9A213E7B0B6007C225B /* RuleViewDetailController.m */,
+				68BAF9A313E7B0B6007C225B /* RuleViewDetailController.xib */,
+				68B6782913FF779600A0AB28 /* SelectionViewController.h */,
+				68B6782A13FF779600A0AB28 /* SelectionViewController.m */,
+				68B6782B13FF779600A0AB28 /* SelectionViewController.xib */,
 				683352E613D80CF3000377D0 /* LogicalView.xcdatamodeld */,
+				68E2668613EF92F700A1DE2F /* ViewControllers */,
+				68FE2C5313DB3F8D00214777 /* Model */,
 				683352DB13D80CF3000377D0 /* Supporting Files */,
 			);
 			path = LogicalView;
@@ -162,6 +225,54 @@
 				6833530413D80CF3000377D0 /* LogicalViewTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6833531113D80D67000377D0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				6833531213D80D68000377D0 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		68E2668613EF92F700A1DE2F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				68B2A53A13F21C8D00F3A18F /* NewTermViewController.h */,
+				68B2A53B13F21C8D00F3A18F /* NewTermViewController.m */,
+				683753AA13F4EE5900378DB3 /* ScalarViewController.h */,
+				683753AB13F4EE5900378DB3 /* ScalarViewController.m */,
+				68E2668C13EF9A2900A1DE2F /* StructureViewController.h */,
+				68E2668D13EF9A2900A1DE2F /* StructureViewController.m */,
+				68E1486113F0ED7800D25ACF /* TermViewController.h */,
+				68E1486213F0ED7800D25ACF /* TermViewController.m */,
+				68E2668F13EFA02500A1DE2F /* ViewConstants.h */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		68FE2C5313DB3F8D00214777 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68FE2C3B13DB3E9800214777 /* Atom.h */,
+				68FE2C3C13DB3E9800214777 /* Atom.m */,
+				68FE2C3E13DB3ED300214777 /* Program.h */,
+				68FE2C3F13DB3ED300214777 /* Program.m */,
+				68FE2C5013DB3F3100214777 /* Rule.h */,
+				68FE2C5113DB3F3200214777 /* Rule.m */,
+				68FE2C4D13DB3F3100214777 /* Structure.h */,
+				68FE2C4E13DB3F3100214777 /* Structure.m */,
+				68FE2C4A13DB3F3000214777 /* Term.h */,
+				68FE2C4B13DB3F3100214777 /* Term.m */,
+				68FE2C4713DB3F1700214777 /* TermList.h */,
+				68FE2C4813DB3F1700214777 /* TermList.m */,
+				68FE2C4413DB3F0800214777 /* TermOccurrence.h */,
+				68FE2C4513DB3F0800214777 /* TermOccurrence.m */,
+				68FE2C4113DB3EF300214777 /* Variable.h */,
+				68FE2C4213DB3EF300214777 /* Variable.m */,
+				68FE2C5413DB444500214777 /* Model.h */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +345,9 @@
 				683352DF13D80CF3000377D0 /* InfoPlist.strings in Resources */,
 				683352EB13D80CF3000377D0 /* MainWindow.xib in Resources */,
 				683352F113D80CF3000377D0 /* RootViewController.xib in Resources */,
+				6833531413D80D68000377D0 /* MainWindow-iPad.xib in Resources */,
+				68BAF9A513E7B0B7007C225B /* RuleViewDetailController.xib in Resources */,
+				68B6782D13FF779600A0AB28 /* SelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +387,20 @@
 				683352E513D80CF3000377D0 /* LogicalViewAppDelegate.m in Sources */,
 				683352E813D80CF3000377D0 /* LogicalView.xcdatamodeld in Sources */,
 				683352EE13D80CF3000377D0 /* RootViewController.m in Sources */,
+				68FE2C3D13DB3E9800214777 /* Atom.m in Sources */,
+				68FE2C4013DB3ED300214777 /* Program.m in Sources */,
+				68FE2C4313DB3EF300214777 /* Variable.m in Sources */,
+				68FE2C4613DB3F0800214777 /* TermOccurrence.m in Sources */,
+				68FE2C4913DB3F1700214777 /* TermList.m in Sources */,
+				68FE2C4C13DB3F3100214777 /* Term.m in Sources */,
+				68FE2C4F13DB3F3100214777 /* Structure.m in Sources */,
+				68FE2C5213DB3F3200214777 /* Rule.m in Sources */,
+				68BAF9A413E7B0B7007C225B /* RuleViewDetailController.m in Sources */,
+				68E2668E13EF9A2900A1DE2F /* StructureViewController.m in Sources */,
+				68E1486313F0ED7800D25ACF /* TermViewController.m in Sources */,
+				68B2A53C13F21C8D00F3A18F /* NewTermViewController.m in Sources */,
+				683753AC13F4EE5A00378DB3 /* ScalarViewController.m in Sources */,
+				68B6782C13FF779600A0AB28 /* SelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +455,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		6833531213D80D68000377D0 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6833531313D80D68000377D0 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -371,7 +507,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogicalView/LogicalView-Prefix.pch";
 				INFOPLIST_FILE = "LogicalView/LogicalView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -384,7 +522,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogicalView/LogicalView-Prefix.pch";
 				INFOPLIST_FILE = "LogicalView/LogicalView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -453,6 +593,7 @@
 				6833530D13D80CF3000377D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6833530E13D80CF3000377D0 /* Build configuration list for PBXNativeTarget "LogicalViewTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +602,7 @@
 				6833531013D80CF3000377D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

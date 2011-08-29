@@ -23,4 +23,8 @@
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 
+- (void)printDatabase;
+- (void)printUnorderedEntities:(NSString *)entityName;
+- (void)printRules;
+
 @end
