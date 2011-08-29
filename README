@@ -1,0 +1,8 @@
+
+
+
+This project is a first attempt to create a logic programming environment
+for iOS devices. The goal is to enable editing and execution of logic
+programs on an iOS device and to synchronize programs through iCloud or
+other cloud services.
+
