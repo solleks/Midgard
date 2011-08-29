@@ -81,6 +81,7 @@
 		6833531313D80D68000377D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		683753AA13F4EE5900378DB3 /* ScalarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalarViewController.h; sourceTree = "<group>"; };
 		683753AB13F4EE5900378DB3 /* ScalarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalarViewController.m; sourceTree = "<group>"; };
+		687F1130140C4D8F00885F38 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		68B2A53A13F21C8D00F3A18F /* NewTermViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTermViewController.h; sourceTree = "<group>"; };
 		68B2A53B13F21C8D00F3A18F /* NewTermViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTermViewController.m; sourceTree = "<group>"; };
 		68B6782913FF779600A0AB28 /* SelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionViewController.h; path = LogicalView.xcodeproj/SelectionViewController.h; sourceTree = SOURCE_ROOT; };
@@ -144,6 +145,7 @@
 		683352C313D80CF2000377D0 = {
 			isa = PBXGroup;
 			children = (
+				687F1130140C4D8F00885F38 /* README */,
 				683352DA13D80CF3000377D0 /* LogicalView */,
 				683352FE13D80CF3000377D0 /* LogicalViewTests */,
 				683352D113D80CF3000377D0 /* Frameworks */,
